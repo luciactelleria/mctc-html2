@@ -27,3 +27,97 @@
     </section>
   </body>
 </html>
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding: 40px;
+  text-align: center;
+  background-color: rgb(146, 101, 150);
+  color:rgb(58, 33, 82)
+}
+
+.card {
+  background-color: rgb(230, 228, 171);
+  max-width: 400%;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgb(57, 12, 66);
+  transition: transform 0.3s, background-color 0.3s ease
+}
+
+.card:hover {
+  background-color: rgb(255, 150, 185);
+  transform: scale(1.1);
+}
+
+h1::before {
+  content: "💖";
+}
+
+h1::after {
+  content: "💖";
+}
+
+.message {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  
+}
+
+.card-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+
+
+.card-links a {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(194, 83, 175);
+  transition: background-color 0.3s ease;
+  color:rgb(58, 33, 82);
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgb(57, 12, 66);
+}
+
+.card-links a:hover {
+  background-color: rgb(194, 104, 71);
+}
+
+.card-links a:active {
+  background-color: rgb(205, 30, 211);
+}
+
+.card-links a:focus {
+  outline: 2px solid rgb(51, 118, 218);
+}
+
+.card-links a:visited {
+  color: rgba(167, 35, 61, 0.774);
+}
+
+section {
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: rgb(212, 112, 112);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  
+}
+
+section:hover{
+  transform: skewX(10deg);
+  
+}
+
+section:target {
+  display: block;
+}
